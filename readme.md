@@ -1,6 +1,7 @@
 ## building:
 
 ```bash
+git clone https://github.com/Tacotakedown/HDiff-lib.git --recursive
 mkdir build && cd build
 cmake ..
 cmake --build .
