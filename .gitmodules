@@ -1,0 +1,15 @@
+[submodule "dependencies/lzma"]
+	path = dependencies/lzma
+	url = https://github.com/sisong/lzma.git
+[submodule "dependencies/libmd5"]
+	path = dependencies/libmd5
+	url = https://github.com/sisong/libmd5.git
+[submodule "dependencies/zstd"]
+	path = dependencies/zstd
+	url = https://github.com/sisong/zstd.git
+[submodule "dependencies/zlib"]
+	path = dependencies/zlib
+	url = https://github.com/sisong/zlib.git
+[submodule "dependencies/bzip2"]
+	path = dependencies/bzip2
+	url = https://github.com/sisong/bzip2.git
