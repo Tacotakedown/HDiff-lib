@@ -12,6 +12,8 @@ static const int kMinSingleMatchScore_default = 6;
 //  kMinSingleMatchScore: default 6, bin: 0--4  text: 4--9
 //  isUseBigCacheMatch: big cache max used O(oldSize) memory, match speed
 //  faster, but build big cache slow
+void create_diff_c(const unsigned char *newData, const unsigned char *newData_end, const unsigned char *oldData, const unsigned char *oldData_end, const unsigned char **out_diff, size_t *out_diff_size);
+
 void create_diff(const unsigned char *newData, const unsigned char *newData_end,
                  const unsigned char *oldData, const unsigned char *oldData_end,
                  std::vector<unsigned char> &out_diff,
@@ -40,6 +42,12 @@ void create_compressed_diff(
     int kMinSingleMatchScore = kMinSingleMatchScore_default,
     bool isUseBigCacheMatch = false, ICoverLinesListener *listener = 0,
     size_t threadNum = 1);
+
+void create_compressed_diff_c(
+    const unsigned char *newData, const unsigned char *newData_end,
+    const unsigned char *oldData, const unsigned char *oldData_end,
+    const unsigned char **out_diff, size_t *out_diff_size);
+
 void create_compressed_diff(
     const unsigned char *newData, const unsigned char *newData_end,
     const unsigned char *oldData, const unsigned char *oldData_end,
